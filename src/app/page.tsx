@@ -8,6 +8,7 @@ import AboutPhoneTimeline from '@/components/sections/about/AboutPhoneTimeline';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
+import { Star } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -42,6 +43,7 @@ export default function LandingPage() {
           title="Discover Your Perfect Cup"
           description="Welcome to Brew Haven - where premium coffee meets warm hospitality. Handcrafted beverages made with passion and the finest beans."
           tag="Premium Coffee Experience"
+          tagIcon={Star}
           mediaItems={[
             {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1763634838357-o6c561jh.jpg",
@@ -69,28 +71,28 @@ export default function LandingPage() {
       
       <div id="products" data-section="products">
         <ProductCardOne
-          title="Featured Menu"
-          description="Explore our carefully curated selection of specialty coffee drinks"
-          tag="Our Specialties"
+          title="Award-Winning Menu"
+          description="Discover our customer-rated specialty coffee drinks, each crafted to perfection by our expert baristas"
+          tag="★★★★★ Rated"
           products={[
             {
               id: "1",
               name: "Classic Espresso",
-              price: "$3.50",
+              price: "$3.50 ★★★★★",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1763634845918-i2mfjcop.jpg",
               imageAlt: "Single shot espresso"
             },
             {
               id: "2",
               name: "Silky Cappuccino",
-              price: "$5.00",
+              price: "$5.00 ★★★★★",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1763634846925-l03vkbkp.jpg",
               imageAlt: "Creamy cappuccino"
             },
             {
               id: "3",
               name: "Cold Brew Delight",
-              price: "$4.50",
+              price: "$4.50 ★★★★★",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1763634849019-qgsa8vmz.jpg",
               imageAlt: "Refreshing cold brew"
             }
